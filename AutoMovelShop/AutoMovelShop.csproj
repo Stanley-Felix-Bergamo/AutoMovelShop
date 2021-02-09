@@ -56,6 +56,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controller\CarroController.cs" />
+    <Compile Include="Controller\MotoController.cs" />
     <Compile Include="DataBase\DBcars.cs" />
     <Compile Include="Model\Carro.cs" />
     <Compile Include="Model\Model View\CarroView.cs" />
@@ -95,9 +97,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Controller\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
