@@ -21,16 +21,17 @@ namespace AutoMovelShop
         private void carroToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var x = new frmCarro();
-
             x.ShowDialog();
-
-
-
         }
-
         private void sairToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void motoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var x = new frmMoto();
+            x.ShowDialog();
         }
     }
 }

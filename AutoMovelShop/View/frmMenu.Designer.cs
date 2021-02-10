@@ -78,6 +78,7 @@ namespace AutoMovelShop
             this.motoToolStripMenuItem.Name = "motoToolStripMenuItem";
             this.motoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.motoToolStripMenuItem.Text = "Moto";
+            this.motoToolStripMenuItem.Click += new System.EventHandler(this.motoToolStripMenuItem_Click);
             // 
             // consultarToolStripMenuItem
             // 

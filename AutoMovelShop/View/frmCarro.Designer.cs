@@ -39,6 +39,7 @@ namespace AutoMovelShop.View
             this.txtcor = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnSalvar
@@ -125,12 +126,23 @@ namespace AutoMovelShop.View
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(174, 25);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(135, 20);
+            this.label4.TabIndex = 21;
+            this.label4.Text = "Dados do Carro";
+            // 
             // frmCarro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkGray;
             this.ClientSize = new System.Drawing.Size(471, 365);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtcor);
             this.Controls.Add(this.label3);
@@ -162,5 +174,6 @@ namespace AutoMovelShop.View
         public System.Windows.Forms.Label label2;
         public System.Windows.Forms.Label label3;
         public System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label4;
     }
 }
