@@ -43,7 +43,7 @@ namespace AutoMovelShop.View
 
             controller.Salvar(x);
 
-            MessageBox.Show("Salvo", "Salvo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Salvo", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             LimparTela();
         }
@@ -63,26 +63,26 @@ namespace AutoMovelShop.View
 
             if (string.IsNullOrEmpty(txtModelo.Text))
             {
-                MessageBox.Show("Campo Obrigatorio", "Campo Modelo Está Vazio", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show( "Campo Modelo Está Vazio", "Campo Obrigatorio", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return false;
             }
 
             if (string.IsNullOrEmpty(txtcor.Text))
             {
-                MessageBox.Show("Campo Obrigatorio", "Campo Cor Está Vazio", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Campo Cor Está Vazio","Campo Obrigatorio",  MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return false;
             }
 
             if (string.IsNullOrEmpty(txtplaca.Text))
             {
-                MessageBox.Show("Campo Obrigatorio", "Campo Placa Está Vazio", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Campo Placa Está Vazio", "Campo Obrigatorio", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return false;
             }
 
 
             if (string.IsNullOrEmpty(txtpreco.Text))
             {
-                MessageBox.Show("Campo Obrigatorio", "Campo Preço Está Vazio", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show( "Campo Preço Está Vazio", "Campo Obrigatorio", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return false;
             }
 
