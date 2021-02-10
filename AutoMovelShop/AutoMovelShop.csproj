@@ -63,6 +63,12 @@
     <Compile Include="Model\Model View\CarroView.cs" />
     <Compile Include="Model\Model View\MotoView.cs" />
     <Compile Include="Model\Moto.cs" />
+    <Compile Include="View\frmCarro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmCarro.Designer.cs">
+      <DependentUpon>frmCarro.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\frmMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +86,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="View\frmCarro.resx">
+      <DependentUpon>frmCarro.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\frmMenu.resx">
       <DependentUpon>frmMenu.cs</DependentUpon>
     </EmbeddedResource>

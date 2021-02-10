@@ -32,8 +32,8 @@ namespace AutoMovelShop
             this.Menu = new System.Windows.Forms.MenuStrip();
             this.cadastrarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.carroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.consultarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.motoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.carroToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.motoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.Menu.SuspendLayout();
@@ -65,6 +65,13 @@ namespace AutoMovelShop
             this.carroToolStripMenuItem.Name = "carroToolStripMenuItem";
             this.carroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.carroToolStripMenuItem.Text = "Carro";
+            this.carroToolStripMenuItem.Click += new System.EventHandler(this.carroToolStripMenuItem_Click);
+            // 
+            // motoToolStripMenuItem
+            // 
+            this.motoToolStripMenuItem.Name = "motoToolStripMenuItem";
+            this.motoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.motoToolStripMenuItem.Text = "Moto";
             // 
             // consultarToolStripMenuItem
             // 
@@ -75,22 +82,16 @@ namespace AutoMovelShop
             this.consultarToolStripMenuItem.Size = new System.Drawing.Size(70, 20);
             this.consultarToolStripMenuItem.Text = "Consultar";
             // 
-            // motoToolStripMenuItem
-            // 
-            this.motoToolStripMenuItem.Name = "motoToolStripMenuItem";
-            this.motoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.motoToolStripMenuItem.Text = "Moto";
-            // 
             // carroToolStripMenuItem1
             // 
             this.carroToolStripMenuItem1.Name = "carroToolStripMenuItem1";
-            this.carroToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.carroToolStripMenuItem1.Size = new System.Drawing.Size(103, 22);
             this.carroToolStripMenuItem1.Text = "Carro";
             // 
             // motoToolStripMenuItem1
             // 
             this.motoToolStripMenuItem1.Name = "motoToolStripMenuItem1";
-            this.motoToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.motoToolStripMenuItem1.Size = new System.Drawing.Size(103, 22);
             this.motoToolStripMenuItem1.Text = "Moto";
             // 
             // frmMenu

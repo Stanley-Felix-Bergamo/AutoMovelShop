@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AutoMovelShop.View;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,16 @@ namespace AutoMovelShop
         public frmMenu()
         {
             InitializeComponent();
+        }
+
+        private void carroToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var x = new frmCarro();
+
+            x.ShowDialog();
+
+
+
         }
     }
 }

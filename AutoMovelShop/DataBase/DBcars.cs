@@ -10,7 +10,7 @@ namespace AutoMovelShop.DataBase
 {
     public class DBcars : DbContext
     {
-        public DBcars() : base("DBcars") { }
+        public DBcars() : base("DbAuto") { }
 
 
         public DbSet<Carro> Carros { get; set; }
