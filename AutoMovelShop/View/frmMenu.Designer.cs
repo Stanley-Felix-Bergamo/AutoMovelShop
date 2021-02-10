@@ -36,6 +36,10 @@ namespace AutoMovelShop
             this.consultarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.carroToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.motoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.editarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.carroToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.motoToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.Menu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -44,7 +48,9 @@ namespace AutoMovelShop
             this.Menu.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.Menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cadastrarToolStripMenuItem,
-            this.consultarToolStripMenuItem});
+            this.consultarToolStripMenuItem,
+            this.editarToolStripMenuItem,
+            this.sairToolStripMenuItem});
             this.Menu.Location = new System.Drawing.Point(0, 0);
             this.Menu.Name = "Menu";
             this.Menu.Size = new System.Drawing.Size(862, 24);
@@ -85,14 +91,42 @@ namespace AutoMovelShop
             // carroToolStripMenuItem1
             // 
             this.carroToolStripMenuItem1.Name = "carroToolStripMenuItem1";
-            this.carroToolStripMenuItem1.Size = new System.Drawing.Size(103, 22);
+            this.carroToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.carroToolStripMenuItem1.Text = "Carro";
             // 
             // motoToolStripMenuItem1
             // 
             this.motoToolStripMenuItem1.Name = "motoToolStripMenuItem1";
-            this.motoToolStripMenuItem1.Size = new System.Drawing.Size(103, 22);
+            this.motoToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.motoToolStripMenuItem1.Text = "Moto";
+            // 
+            // editarToolStripMenuItem
+            // 
+            this.editarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.carroToolStripMenuItem2,
+            this.motoToolStripMenuItem2});
+            this.editarToolStripMenuItem.Name = "editarToolStripMenuItem";
+            this.editarToolStripMenuItem.Size = new System.Drawing.Size(49, 20);
+            this.editarToolStripMenuItem.Text = "Editar";
+            // 
+            // sairToolStripMenuItem
+            // 
+            this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
+            this.sairToolStripMenuItem.Size = new System.Drawing.Size(38, 20);
+            this.sairToolStripMenuItem.Text = "Sair";
+            this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
+            // 
+            // carroToolStripMenuItem2
+            // 
+            this.carroToolStripMenuItem2.Name = "carroToolStripMenuItem2";
+            this.carroToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.carroToolStripMenuItem2.Text = "Carro";
+            // 
+            // motoToolStripMenuItem2
+            // 
+            this.motoToolStripMenuItem2.Name = "motoToolStripMenuItem2";
+            this.motoToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.motoToolStripMenuItem2.Text = "Moto";
             // 
             // frmMenu
             // 
@@ -121,6 +155,10 @@ namespace AutoMovelShop
         private System.Windows.Forms.ToolStripMenuItem consultarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem carroToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem motoToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem editarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem carroToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem motoToolStripMenuItem2;
     }
 }
 

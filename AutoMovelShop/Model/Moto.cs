@@ -14,6 +14,7 @@ namespace AutoMovelShop.Model
             this.Modelo = moto.Modelo;
             this.Placa = moto.Placa;
             this.Preco = moto.Preco;
+            this.Cor = moto.Cor;
         }
         [Key]
         public int CodMoto { get; set; }
@@ -23,7 +24,7 @@ namespace AutoMovelShop.Model
 
         public string Preco { get; set; }
 
-
+        public string Cor { get; set; }
 
 
     }

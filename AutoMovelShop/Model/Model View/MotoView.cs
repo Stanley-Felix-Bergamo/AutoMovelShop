@@ -18,7 +18,7 @@ namespace AutoMovelShop.Model.Model_View
 
         public string Modelo { get; set; }
         public string Placa { get; set; }
-
+        public string Cor { get; set; }
         public string Preco { get; set; }
     }
 }
