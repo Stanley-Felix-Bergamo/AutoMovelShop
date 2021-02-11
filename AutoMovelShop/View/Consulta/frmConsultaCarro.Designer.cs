@@ -29,24 +29,25 @@ namespace AutoMovelShop.View.Consulta
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dwgCarro = new System.Windows.Forms.DataGridView();
             this.StripEdit = new System.Windows.Forms.MenuStrip();
             this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.alterarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.apagarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.visualizarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            ((System.ComponentModel.ISupportInitialize)(this.dwgCarro)).BeginInit();
             this.StripEdit.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dwgCarro
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(801, 498);
-            this.dataGridView1.TabIndex = 1;
+            this.dwgCarro.BackgroundColor = System.Drawing.Color.DarkGray;
+            this.dwgCarro.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dwgCarro.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dwgCarro.Location = new System.Drawing.Point(0, 0);
+            this.dwgCarro.Name = "dwgCarro";
+            this.dwgCarro.Size = new System.Drawing.Size(801, 498);
+            this.dwgCarro.TabIndex = 1;
             // 
             // StripEdit
             // 
@@ -55,12 +56,13 @@ namespace AutoMovelShop.View.Consulta
             this.StripEdit.GripMargin = new System.Windows.Forms.Padding(5, 2, 0, 2);
             this.StripEdit.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.sairToolStripMenuItem,
+            this.visualizarToolStripMenuItem,
             this.alterarToolStripMenuItem,
             this.apagarToolStripMenuItem});
-            this.StripEdit.Location = new System.Drawing.Point(742, 0);
+            this.StripEdit.Location = new System.Drawing.Point(731, 0);
             this.StripEdit.Name = "StripEdit";
             this.StripEdit.Padding = new System.Windows.Forms.Padding(1, 2, 1, 5);
-            this.StripEdit.Size = new System.Drawing.Size(59, 498);
+            this.StripEdit.Size = new System.Drawing.Size(70, 498);
             this.StripEdit.TabIndex = 2;
             this.StripEdit.Text = "menuStrip1";
             // 
@@ -84,18 +86,25 @@ namespace AutoMovelShop.View.Consulta
             this.apagarToolStripMenuItem.Size = new System.Drawing.Size(54, 19);
             this.apagarToolStripMenuItem.Text = "Apagar";
             // 
+            // visualizarToolStripMenuItem
+            // 
+            this.visualizarToolStripMenuItem.Name = "visualizarToolStripMenuItem";
+            this.visualizarToolStripMenuItem.Size = new System.Drawing.Size(65, 19);
+            this.visualizarToolStripMenuItem.Text = "Visualizar";
+            // 
             // frmConsultaCarro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(801, 498);
             this.Controls.Add(this.StripEdit);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dwgCarro);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmConsultaCarro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmConsultaCarro";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Shown += new System.EventHandler(this.frmConsultaCarro_Shown);
+            ((System.ComponentModel.ISupportInitialize)(this.dwgCarro)).EndInit();
             this.StripEdit.ResumeLayout(false);
             this.StripEdit.PerformLayout();
             this.ResumeLayout(false);
@@ -104,10 +113,11 @@ namespace AutoMovelShop.View.Consulta
         }
 
         #endregion
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dwgCarro;
         private System.Windows.Forms.MenuStrip StripEdit;
         private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem alterarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem apagarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem visualizarToolStripMenuItem;
     }
 }

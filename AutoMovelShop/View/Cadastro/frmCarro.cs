@@ -20,16 +20,75 @@ namespace AutoMovelShop.View
             InitializeComponent();
         }
 
-        private void btnSalvar_Click(object sender, EventArgs e)
+
+
+        private void LimparTela()
+        {
+            txtNome.Text = string.Empty;
+            txtMarca.Text = string.Empty;
+            txtPlaca.Text = string.Empty;
+            txtpreco.Text = string.Empty;
+            txtAno.Text = string.Empty;
+            txtColor.Text = string.Empty;
+
+        }
+
+
+        private bool ValidaCao()
+        {
+
+            if (string.IsNullOrEmpty(txtAno.Text))
+            {
+                MessageBox.Show("Campo Ano Está Vazio", "Campo Obrigatorio", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+
+            if (string.IsNullOrEmpty(txtPlaca.Text))
+            {
+                MessageBox.Show("Campo Placa Está Vazio", "Campo Obrigatorio", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+
+            if (string.IsNullOrEmpty(txtMarca.Text))
+            {
+                MessageBox.Show("Campo Marca Está Vazio", "Campo Obrigatorio", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+
+            if (string.IsNullOrEmpty(txtNome.Text))
+            {
+                MessageBox.Show("Campo Cor Está Vazio", "Campo Obrigatorio", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+
+            if (string.IsNullOrEmpty(txtColor.Text))
+            {
+                MessageBox.Show("Campo Placa Está Vazio", "Campo Obrigatorio", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+
+
+            if (string.IsNullOrEmpty(txtpreco.Text))
+            {
+                MessageBox.Show("Campo Preço Está Vazio", "Campo Obrigatorio", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+
+            return true;
+        }
+
+        private void btnSalvar_Click_1(object sender, EventArgs e)
         {
             var x = new Carro();
             Controller = new CarroController();
 
-
-            x.Modelo = txtModelo.Text;
-            x.Cor = txtcor.Text;
-            x.Placa = txtplaca.Text;
+            x.Nome = txtNome.Text;
+            x.Modelo = txtMarca.Text;
+            x.Placa = txtPlaca.Text;
             x.Preco = txtpreco.Text;
+            x.Ano = txtAno.Text;
+            x.Cor = txtColor.Text;
+
 
             if (!ValidaCao())
                 return;
@@ -39,52 +98,6 @@ namespace AutoMovelShop.View
             MessageBox.Show("Salvo", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             LimparTela();
-
-        }
-
-        private void LimparTela()
-        {
-
-            txtModelo.Text = string.Empty;
-            txtcor.Text = string.Empty; ;
-            txtplaca.Text = string.Empty; ;
-            txtpreco.Text = string.Empty; ;
-        }
-
-
-        private bool ValidaCao()
-        {
-
-            if (string.IsNullOrEmpty(txtModelo.Text))
-            {
-                MessageBox.Show("Campo Modelo Está Vazio", "Campo Obrigatorio",  MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return false;
-            }
-
-            if (string.IsNullOrEmpty(txtcor.Text))
-            {
-                MessageBox.Show("Campo Cor Está Vazio", "Campo Obrigatorio",  MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return false;
-            }
-
-            if (string.IsNullOrEmpty(txtplaca.Text))
-            {
-                MessageBox.Show( "Campo Placa Está Vazio", "Campo Obrigatorio", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return false;
-            }
-
-
-            if (string.IsNullOrEmpty(txtpreco.Text))
-            {
-                MessageBox.Show( "Campo Preço Está Vazio", "Campo Obrigatorio", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return false;
-            }
-
-            return true;
-        }
-        private void button1_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }
