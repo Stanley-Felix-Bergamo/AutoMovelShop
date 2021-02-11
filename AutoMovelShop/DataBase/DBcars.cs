@@ -15,8 +15,6 @@ namespace AutoMovelShop.DataBase
 
         public DbSet<Carro> Carros { get; set; }
 
-        public DbSet<Moto> Motos { get; set; }
-
 
     }
 }

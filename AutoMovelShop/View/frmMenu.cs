@@ -29,11 +29,7 @@ namespace AutoMovelShop
             this.Close();
         }
 
-        private void motoToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            var x = new frmMoto();
-            CarregaFormulario(x, pnlPrincipal);
-        }
+        
 
 
 
