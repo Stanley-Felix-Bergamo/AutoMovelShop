@@ -77,7 +77,12 @@ namespace AutoMovelShop.View
             return true;
         }
 
-        private void btnSalvar_Click_1(object sender, EventArgs e)
+        private void sairToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnSalvar_Click(object sender, EventArgs e)
         {
             var x = new Carro();
             Controller = new CarroController();

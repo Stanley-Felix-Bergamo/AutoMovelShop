@@ -1,5 +1,6 @@
 ﻿using AutoMovelShop.Controller;
 using AutoMovelShop.Model.Model_View;
+using AutoMovelShop.View.Visualiza;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -76,6 +77,13 @@ namespace AutoMovelShop.View.Consulta
 
             dwgCarro.Columns[nameof(CarroView.Preco)].DisplayIndex = 5;
             dwgCarro.Columns[nameof(CarroView.Preco)].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+
+        }
+
+        private void visualizarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var x = new frmVisualizaCarro();
+            x.ShowDialog();
 
         }
     }

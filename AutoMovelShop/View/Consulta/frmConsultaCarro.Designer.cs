@@ -32,9 +32,9 @@ namespace AutoMovelShop.View.Consulta
             this.dwgCarro = new System.Windows.Forms.DataGridView();
             this.StripEdit = new System.Windows.Forms.MenuStrip();
             this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.visualizarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.alterarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.apagarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.visualizarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dwgCarro)).BeginInit();
             this.StripEdit.SuspendLayout();
             this.SuspendLayout();
@@ -59,10 +59,10 @@ namespace AutoMovelShop.View.Consulta
             this.visualizarToolStripMenuItem,
             this.alterarToolStripMenuItem,
             this.apagarToolStripMenuItem});
-            this.StripEdit.Location = new System.Drawing.Point(731, 0);
+            this.StripEdit.Location = new System.Drawing.Point(679, 0);
             this.StripEdit.Name = "StripEdit";
             this.StripEdit.Padding = new System.Windows.Forms.Padding(1, 2, 1, 5);
-            this.StripEdit.Size = new System.Drawing.Size(70, 498);
+            this.StripEdit.Size = new System.Drawing.Size(122, 498);
             this.StripEdit.TabIndex = 2;
             this.StripEdit.Text = "menuStrip1";
             // 
@@ -70,27 +70,28 @@ namespace AutoMovelShop.View.Consulta
             // 
             this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
             this.sairToolStripMenuItem.Padding = new System.Windows.Forms.Padding(8, 0, 8, 0);
-            this.sairToolStripMenuItem.Size = new System.Drawing.Size(54, 19);
+            this.sairToolStripMenuItem.Size = new System.Drawing.Size(117, 19);
             this.sairToolStripMenuItem.Text = "Voltar";
             this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
+            // 
+            // visualizarToolStripMenuItem
+            // 
+            this.visualizarToolStripMenuItem.Name = "visualizarToolStripMenuItem";
+            this.visualizarToolStripMenuItem.Size = new System.Drawing.Size(117, 19);
+            this.visualizarToolStripMenuItem.Text = "Visualizar";
+            this.visualizarToolStripMenuItem.Click += new System.EventHandler(this.visualizarToolStripMenuItem_Click);
             // 
             // alterarToolStripMenuItem
             // 
             this.alterarToolStripMenuItem.Name = "alterarToolStripMenuItem";
-            this.alterarToolStripMenuItem.Size = new System.Drawing.Size(54, 19);
+            this.alterarToolStripMenuItem.Size = new System.Drawing.Size(117, 19);
             this.alterarToolStripMenuItem.Text = "Editar";
             // 
             // apagarToolStripMenuItem
             // 
             this.apagarToolStripMenuItem.Name = "apagarToolStripMenuItem";
-            this.apagarToolStripMenuItem.Size = new System.Drawing.Size(54, 19);
+            this.apagarToolStripMenuItem.Size = new System.Drawing.Size(117, 19);
             this.apagarToolStripMenuItem.Text = "Apagar";
-            // 
-            // visualizarToolStripMenuItem
-            // 
-            this.visualizarToolStripMenuItem.Name = "visualizarToolStripMenuItem";
-            this.visualizarToolStripMenuItem.Size = new System.Drawing.Size(65, 19);
-            this.visualizarToolStripMenuItem.Text = "Visualizar";
             // 
             // frmConsultaCarro
             // 
