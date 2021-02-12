@@ -18,6 +18,7 @@ namespace AutoMovelShop.Model
             this.Cor = carro.Cor;
             this.Nome = carro.Nome;
             this.Ano = carro.Ano;
+            this.ImagemCarro = carro.ImagemCarro;
         }
         [Key]
         public int CodCarro { get; set; }
@@ -30,6 +31,9 @@ namespace AutoMovelShop.Model
 
         public string Cor { get; set; }
 
+
+        [Browsable(false)]
+        public byte[] ImagemCarro { get; set; }
 
     }
 }

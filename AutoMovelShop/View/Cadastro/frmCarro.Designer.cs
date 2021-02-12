@@ -32,7 +32,7 @@ namespace AutoMovelShop.View
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCarro));
             this.StripMenu = new System.Windows.Forms.MenuStrip();
             this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pictureBoxCarro = new System.Windows.Forms.PictureBox();
+            this.ptbImagemAdicionada = new System.Windows.Forms.PictureBox();
             this.btnImporta = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.txtPlaca = new System.Windows.Forms.TextBox();
@@ -48,7 +48,7 @@ namespace AutoMovelShop.View
             this.txtColor = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.StripMenu.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCarro)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbImagemAdicionada)).BeginInit();
             this.SuspendLayout();
             // 
             // StripMenu
@@ -72,17 +72,17 @@ namespace AutoMovelShop.View
             this.sairToolStripMenuItem.Text = "Voltar";
             this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
             // 
-            // pictureBoxCarro
+            // ptbImagemAdicionada
             // 
-            this.pictureBoxCarro.BackColor = System.Drawing.Color.White;
-            this.pictureBoxCarro.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxCarro.Image")));
-            this.pictureBoxCarro.InitialImage = null;
-            this.pictureBoxCarro.Location = new System.Drawing.Point(340, 26);
-            this.pictureBoxCarro.Name = "pictureBoxCarro";
-            this.pictureBoxCarro.Size = new System.Drawing.Size(375, 235);
-            this.pictureBoxCarro.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxCarro.TabIndex = 72;
-            this.pictureBoxCarro.TabStop = false;
+            this.ptbImagemAdicionada.BackColor = System.Drawing.Color.White;
+            this.ptbImagemAdicionada.Image = ((System.Drawing.Image)(resources.GetObject("ptbImagemAdicionada.Image")));
+            this.ptbImagemAdicionada.InitialImage = null;
+            this.ptbImagemAdicionada.Location = new System.Drawing.Point(340, 26);
+            this.ptbImagemAdicionada.Name = "ptbImagemAdicionada";
+            this.ptbImagemAdicionada.Size = new System.Drawing.Size(375, 235);
+            this.ptbImagemAdicionada.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ptbImagemAdicionada.TabIndex = 72;
+            this.ptbImagemAdicionada.TabStop = false;
             // 
             // btnImporta
             // 
@@ -92,6 +92,7 @@ namespace AutoMovelShop.View
             this.btnImporta.TabIndex = 71;
             this.btnImporta.Text = "Importar Imagem";
             this.btnImporta.UseVisualStyleBackColor = true;
+            this.btnImporta.Click += new System.EventHandler(this.btnImporta_Click_1);
             // 
             // label6
             // 
@@ -205,7 +206,7 @@ namespace AutoMovelShop.View
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkGray;
             this.ClientSize = new System.Drawing.Size(798, 566);
-            this.Controls.Add(this.pictureBoxCarro);
+            this.Controls.Add(this.ptbImagemAdicionada);
             this.Controls.Add(this.btnImporta);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtPlaca);
@@ -228,7 +229,7 @@ namespace AutoMovelShop.View
             this.TopMost = true;
             this.StripMenu.ResumeLayout(false);
             this.StripMenu.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCarro)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbImagemAdicionada)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -237,7 +238,7 @@ namespace AutoMovelShop.View
         #endregion
         private System.Windows.Forms.MenuStrip StripMenu;
         private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem;
-        public System.Windows.Forms.PictureBox pictureBoxCarro;
+        public System.Windows.Forms.PictureBox ptbImagemAdicionada;
         private System.Windows.Forms.Button btnImporta;
         public System.Windows.Forms.Label label6;
         public System.Windows.Forms.TextBox txtPlaca;

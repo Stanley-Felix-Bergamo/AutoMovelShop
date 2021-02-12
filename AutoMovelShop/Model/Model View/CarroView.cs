@@ -24,5 +24,7 @@ namespace AutoMovelShop.Model.Model_View
         public string Cor { get; set; }
         public string Preco { get; set; }
         public string Ano { get; set; }
+        [Browsable(false)]
+        public byte[] ImagemCarro { get; set; }
     }
 }

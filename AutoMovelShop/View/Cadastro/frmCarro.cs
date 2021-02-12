@@ -5,19 +5,27 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace AutoMovelShop.View
 {
     public partial class frmCarro : Form
     {
-        CarroController Controller;
+        private CarroController Controller = new CarroController();
+        private Carro x = new Carro();
+        private string Endereco = String.Empty;
+        byte[] imagemBytes = null;
+
+
         public frmCarro()
         {
             InitializeComponent();
+
         }
 
 
@@ -30,6 +38,7 @@ namespace AutoMovelShop.View
             txtpreco.Text = string.Empty;
             txtAno.Text = string.Empty;
             txtColor.Text = string.Empty;
+            ptbImagemAdicionada.Image = null;
 
         }
 
@@ -84,8 +93,6 @@ namespace AutoMovelShop.View
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
-            var x = new Carro();
-            Controller = new CarroController();
 
             x.Nome = txtNome.Text;
             x.Modelo = txtMarca.Text;
@@ -93,6 +100,7 @@ namespace AutoMovelShop.View
             x.Preco = txtpreco.Text;
             x.Ano = txtAno.Text;
             x.Cor = txtColor.Text;
+            x.ImagemCarro = imagemBytes;
 
 
             if (!ValidaCao())
@@ -104,5 +112,40 @@ namespace AutoMovelShop.View
 
             LimparTela();
         }
+
+
+
+        private void btnImporta_Click_1(object sender, EventArgs e)
+        {
+
+            OpenFileDialog dialog = new OpenFileDialog();
+
+            dialog.Filter = "JPG Files(*.jpg)|*.jpg|PNG Files(*.png)|*.png|AllFiles(*.*)|*.*";
+
+            if (dialog.ShowDialog() == DialogResult.OK)
+            {
+                Endereco = dialog.FileName.ToString();
+                ptbImagemAdicionada.ImageLocation = Endereco;
+
+
+
+
+
+               
+                string caminhoCompletoImagem = Endereco;
+                FileStream fs = new FileStream(caminhoCompletoImagem, FileMode.Open, FileAccess.Read);
+                BinaryReader br = new BinaryReader(fs);
+
+                imagemBytes = br.ReadBytes(1200000);
+               // x.ImagemCarro = imagemBytes;
+               
+
+            }
+        }
+
+
+
+
+
     }
 }

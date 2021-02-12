@@ -12,7 +12,7 @@ namespace AutoMovelShop.Controller
     {
 
         private DataBase.DBcars Contexto;
-        public CarroController()=> Contexto = new DataBase.DBcars();
+        public CarroController() => Contexto = new DataBase.DBcars();
 
         public void Salvar(Carro x)
         {
@@ -22,21 +22,33 @@ namespace AutoMovelShop.Controller
 
         }
 
-     
+
 
         public List<CarroView> Listando()
         {
             var List = Contexto.Carros.ToList().Select(obj => new CarroView()
             {
-               CodCarroView=obj.CodCarro,
-               Cor=obj.Cor,
-               Ano=obj.Ano,
-               Modelo=obj.Modelo,
-               Nome=obj.Nome,
-               Placa=obj.Placa,
-               Preco=obj.Preco,
+                CodCarroView = obj.CodCarro,
+                Cor = obj.Cor,
+                Ano = obj.Ano,
+                Modelo = obj.Modelo,
+                Nome = obj.Nome,
+                Placa = obj.Placa,
+                Preco = obj.Preco,
             }).ToList();
 
+            return List;
+        }
+
+        public List<CarroView> BuscandoImagem()
+        {
+            var List = Contexto.Carros.ToList().Select(obj => new CarroView()
+            {
+
+                CodCarroView=obj.CodCarro,
+                ImagemCarro=obj.ImagemCarro,
+
+            }).ToList();
             return List;
         }
     }

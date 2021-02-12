@@ -65,7 +65,7 @@ namespace AutoMovelShop
             // carroToolStripMenuItem
             // 
             this.carroToolStripMenuItem.Name = "carroToolStripMenuItem";
-            this.carroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.carroToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
             this.carroToolStripMenuItem.Text = "Carro";
             this.carroToolStripMenuItem.Click += new System.EventHandler(this.carroToolStripMenuItem_Click);
             // 
@@ -80,7 +80,7 @@ namespace AutoMovelShop
             // carroToolStripMenuItem2
             // 
             this.carroToolStripMenuItem2.Name = "carroToolStripMenuItem2";
-            this.carroToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.carroToolStripMenuItem2.Size = new System.Drawing.Size(103, 22);
             this.carroToolStripMenuItem2.Text = "Carro";
             this.carroToolStripMenuItem2.Click += new System.EventHandler(this.carroToolStripMenuItem2_Click);
             // 
@@ -93,6 +93,7 @@ namespace AutoMovelShop
             // 
             // pnlPrincipal
             // 
+            this.pnlPrincipal.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pnlPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlPrincipal.Location = new System.Drawing.Point(0, 26);
             this.pnlPrincipal.Name = "pnlPrincipal";
@@ -107,7 +108,7 @@ namespace AutoMovelShop
             this.ClientSize = new System.Drawing.Size(862, 561);
             this.Controls.Add(this.pnlPrincipal);
             this.Controls.Add(this.StripMenu);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MainMenuStrip = this.StripMenu;
             this.Name = "frmMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

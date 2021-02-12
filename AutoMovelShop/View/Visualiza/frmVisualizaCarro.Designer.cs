@@ -32,7 +32,7 @@ namespace AutoMovelShop.View.Visualiza
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmVisualizaCarro));
             this.StripMenu = new System.Windows.Forms.MenuStrip();
             this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pcbCarro = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -46,7 +46,7 @@ namespace AutoMovelShop.View.Visualiza
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.StripMenu.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbCarro)).BeginInit();
             this.SuspendLayout();
             // 
             // StripMenu
@@ -70,17 +70,18 @@ namespace AutoMovelShop.View.Visualiza
             this.sairToolStripMenuItem.Text = "Voltar";
             this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
             // 
-            // pictureBox2
+            // pcbCarro
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.White;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.InitialImage = null;
-            this.pictureBox2.Location = new System.Drawing.Point(242, 26);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(433, 256);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 69;
-            this.pictureBox2.TabStop = false;
+            this.pcbCarro.BackColor = System.Drawing.Color.White;
+            this.pcbCarro.Image = ((System.Drawing.Image)(resources.GetObject("pcbCarro.Image")));
+            this.pcbCarro.InitialImage = null;
+            this.pcbCarro.Location = new System.Drawing.Point(242, 26);
+            this.pcbCarro.Name = "pcbCarro";
+            this.pcbCarro.Size = new System.Drawing.Size(433, 256);
+            this.pcbCarro.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pcbCarro.TabIndex = 69;
+            this.pcbCarro.TabStop = false;
+            this.pcbCarro.Click += new System.EventHandler(this.pcbCarro_Click);
             // 
             // label4
             // 
@@ -184,7 +185,7 @@ namespace AutoMovelShop.View.Visualiza
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkGray;
             this.ClientSize = new System.Drawing.Size(930, 566);
-            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pcbCarro);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.textBox2);
@@ -204,7 +205,7 @@ namespace AutoMovelShop.View.Visualiza
             this.Text = "frmVisualizaCarro";
             this.StripMenu.ResumeLayout(false);
             this.StripMenu.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbCarro)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -213,7 +214,7 @@ namespace AutoMovelShop.View.Visualiza
         #endregion
         private System.Windows.Forms.MenuStrip StripMenu;
         private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem;
-        public System.Windows.Forms.PictureBox pictureBox2;
+        public System.Windows.Forms.PictureBox pcbCarro;
         public System.Windows.Forms.Label label4;
         public System.Windows.Forms.TextBox textBox1;
         public System.Windows.Forms.TextBox textBox2;
