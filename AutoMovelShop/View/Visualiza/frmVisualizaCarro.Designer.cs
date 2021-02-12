@@ -37,7 +37,7 @@ namespace AutoMovelShop.View.Visualiza
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtMarca = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -115,12 +115,12 @@ namespace AutoMovelShop.View.Visualiza
             this.label7.TabIndex = 67;
             this.label7.Text = "Ano";
             // 
-            // textBox3
+            // txtMarca
             // 
-            this.textBox3.Location = new System.Drawing.Point(296, 298);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(379, 20);
-            this.textBox3.TabIndex = 57;
+            this.txtMarca.Location = new System.Drawing.Point(296, 298);
+            this.txtMarca.Name = "txtMarca";
+            this.txtMarca.Size = new System.Drawing.Size(379, 20);
+            this.txtMarca.TabIndex = 57;
             // 
             // textBox4
             // 
@@ -190,7 +190,7 @@ namespace AutoMovelShop.View.Visualiza
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtMarca);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label9);
@@ -219,7 +219,7 @@ namespace AutoMovelShop.View.Visualiza
         public System.Windows.Forms.TextBox textBox1;
         public System.Windows.Forms.TextBox textBox2;
         public System.Windows.Forms.Label label7;
-        public System.Windows.Forms.TextBox textBox3;
+        public System.Windows.Forms.TextBox txtMarca;
         public System.Windows.Forms.TextBox textBox4;
         public System.Windows.Forms.Label label8;
         public System.Windows.Forms.Label label9;

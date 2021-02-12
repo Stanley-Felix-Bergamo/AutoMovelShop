@@ -82,24 +82,7 @@ namespace AutoMovelShop.View.Consulta
 
         private void visualizarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            try
-            {
-
-
-
-                var x = (CarroView)dwgCarro.CurrentRow.DataBoundItem;
-
-                var Visualiza = new frmVisualizaCarro();
-
-                Visualiza.ShowDialog();
-
-
-            }
-            catch(Exception ops)
-            {
-                var msg = ops.Message;
-                MessageBox.Show("OPS","ops",MessageBoxButtons.OK,MessageBoxIcon.Warning);
-            }
+            
         }
     }
 }

@@ -80,8 +80,8 @@ namespace AutoMovelShop
             // carroToolStripMenuItem2
             // 
             this.carroToolStripMenuItem2.Name = "carroToolStripMenuItem2";
-            this.carroToolStripMenuItem2.Size = new System.Drawing.Size(103, 22);
-            this.carroToolStripMenuItem2.Text = "Carro";
+            this.carroToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.carroToolStripMenuItem2.Text = "Tabela de Carros";
             this.carroToolStripMenuItem2.Click += new System.EventHandler(this.carroToolStripMenuItem2_Click);
             // 
             // sairToolStripMenuItem

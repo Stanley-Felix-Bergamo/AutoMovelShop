@@ -29,9 +29,8 @@ namespace AutoMovelShop.View.Visualiza
 
         private void pcbCarro_Click(object sender, EventArgs e)
         {
-
-            View = controller.BuscandoImagem();
-
         }
+       
+
     }
 }

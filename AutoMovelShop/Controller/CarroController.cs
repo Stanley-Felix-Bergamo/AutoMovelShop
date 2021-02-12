@@ -35,6 +35,7 @@ namespace AutoMovelShop.Controller
                 Nome = obj.Nome,
                 Placa = obj.Placa,
                 Preco = obj.Preco,
+                ImagemCarro=obj.ImagemCarro,
             }).ToList();
 
             return List;
