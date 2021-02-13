@@ -15,10 +15,11 @@ namespace AutoMovelShop.View.Consulta
 {
     public partial class frmConsultaCarro : Form
     {
-
+       
         public frmConsultaCarro()
         {
             InitializeComponent();
+            
 
         }
 
@@ -82,7 +83,9 @@ namespace AutoMovelShop.View.Consulta
 
         private void visualizarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+            var Seleciona = (CarroView)dwgCarro.CurrentRow.DataBoundItem;
+            var x = new frmVisualizaCarro(Seleciona);
+            x.ShowDialog();
         }
     }
 }

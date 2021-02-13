@@ -1,4 +1,5 @@
 ﻿using AutoMovelShop.Controller;
+using AutoMovelShop.Model;
 using AutoMovelShop.Model.Model_View;
 using System;
 using System.Collections.Generic;
@@ -14,9 +15,14 @@ namespace AutoMovelShop.View.Visualiza
 {
     public partial class frmVisualizaCarro : Form
     {
+        private CarroView _view = new CarroView();
         public CarroController controller = new CarroController();
+        private Carro Carro = new Carro();
+        public frmVisualizaCarro(CarroView x) : this()
+        {
+            this._view = x;
+        }
 
-        public List<CarroView> View = new List<CarroView>();
         public frmVisualizaCarro()
         {
             InitializeComponent();
@@ -30,7 +36,23 @@ namespace AutoMovelShop.View.Visualiza
         private void pcbCarro_Click(object sender, EventArgs e)
         {
         }
-       
 
+        public void frmVisualizaCarro_Shown(object sender, EventArgs e)
+        {
+            Carro = (new CarroController()).BuscarDados(_view);
+            //pcbCarro.Image = Carro.ImagemCarro;
+            txtMarca.Text = Carro.Modelo;
+            txtAno.Text = Carro.Ano;
+            txtCor.Text = Carro.Cor;
+            txtplaca.Text = Carro.Placa;
+            txtPreco.Text = Carro.Preco;
+            txtNome.Text = Carro.Nome;
+
+
+
+
+
+
+        }
     }
 }

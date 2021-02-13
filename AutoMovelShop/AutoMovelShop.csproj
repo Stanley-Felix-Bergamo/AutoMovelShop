@@ -61,6 +61,7 @@
     <Compile Include="DataBase\DBcars.cs" />
     <Compile Include="Model\Carro.cs" />
     <Compile Include="Model\Model View\CarroView.cs" />
+    <Compile Include="Variaveis.cs" />
     <Compile Include="View\Cadastro\frmCarro.cs">
       <SubType>Form</SubType>
     </Compile>

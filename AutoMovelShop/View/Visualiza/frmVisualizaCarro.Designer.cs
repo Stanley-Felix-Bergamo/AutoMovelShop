@@ -34,16 +34,16 @@ namespace AutoMovelShop.View.Visualiza
             this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pcbCarro = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtplaca = new System.Windows.Forms.TextBox();
+            this.txtAno = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.txtMarca = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtNome = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtPreco = new System.Windows.Forms.TextBox();
+            this.txtCor = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.StripMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbCarro)).BeginInit();
@@ -81,7 +81,6 @@ namespace AutoMovelShop.View.Visualiza
             this.pcbCarro.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pcbCarro.TabIndex = 69;
             this.pcbCarro.TabStop = false;
-            this.pcbCarro.Click += new System.EventHandler(this.pcbCarro_Click);
             // 
             // label4
             // 
@@ -92,19 +91,19 @@ namespace AutoMovelShop.View.Visualiza
             this.label4.TabIndex = 68;
             this.label4.Text = "Placa";
             // 
-            // textBox1
+            // txtplaca
             // 
-            this.textBox1.Location = new System.Drawing.Point(296, 381);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(379, 20);
-            this.textBox1.TabIndex = 60;
+            this.txtplaca.Location = new System.Drawing.Point(296, 381);
+            this.txtplaca.Name = "txtplaca";
+            this.txtplaca.Size = new System.Drawing.Size(379, 20);
+            this.txtplaca.TabIndex = 60;
             // 
-            // textBox2
+            // txtAno
             // 
-            this.textBox2.Location = new System.Drawing.Point(296, 467);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(379, 20);
-            this.textBox2.TabIndex = 63;
+            this.txtAno.Location = new System.Drawing.Point(296, 467);
+            this.txtAno.Name = "txtAno";
+            this.txtAno.Size = new System.Drawing.Size(379, 20);
+            this.txtAno.TabIndex = 63;
             // 
             // label7
             // 
@@ -122,12 +121,12 @@ namespace AutoMovelShop.View.Visualiza
             this.txtMarca.Size = new System.Drawing.Size(379, 20);
             this.txtMarca.TabIndex = 57;
             // 
-            // textBox4
+            // txtNome
             // 
-            this.textBox4.Location = new System.Drawing.Point(296, 340);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(379, 20);
-            this.textBox4.TabIndex = 58;
+            this.txtNome.Location = new System.Drawing.Point(296, 340);
+            this.txtNome.Name = "txtNome";
+            this.txtNome.Size = new System.Drawing.Size(379, 20);
+            this.txtNome.TabIndex = 58;
             // 
             // label8
             // 
@@ -156,19 +155,19 @@ namespace AutoMovelShop.View.Visualiza
             this.label10.TabIndex = 61;
             this.label10.Text = "Cor";
             // 
-            // textBox5
+            // txtPreco
             // 
-            this.textBox5.Location = new System.Drawing.Point(296, 513);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(379, 20);
-            this.textBox5.TabIndex = 64;
+            this.txtPreco.Location = new System.Drawing.Point(296, 513);
+            this.txtPreco.Name = "txtPreco";
+            this.txtPreco.Size = new System.Drawing.Size(379, 20);
+            this.txtPreco.TabIndex = 64;
             // 
-            // textBox6
+            // txtCor
             // 
-            this.textBox6.Location = new System.Drawing.Point(296, 422);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(379, 20);
-            this.textBox6.TabIndex = 62;
+            this.txtCor.Location = new System.Drawing.Point(296, 422);
+            this.txtCor.Name = "txtCor";
+            this.txtCor.Size = new System.Drawing.Size(379, 20);
+            this.txtCor.TabIndex = 62;
             // 
             // label11
             // 
@@ -187,22 +186,23 @@ namespace AutoMovelShop.View.Visualiza
             this.ClientSize = new System.Drawing.Size(930, 566);
             this.Controls.Add(this.pcbCarro);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtplaca);
+            this.Controls.Add(this.txtAno);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtMarca);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txtNome);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.txtPreco);
+            this.Controls.Add(this.txtCor);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.StripMenu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmVisualizaCarro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmVisualizaCarro";
+            this.Shown += new System.EventHandler(this.frmVisualizaCarro_Shown);
             this.StripMenu.ResumeLayout(false);
             this.StripMenu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbCarro)).EndInit();
@@ -216,16 +216,16 @@ namespace AutoMovelShop.View.Visualiza
         private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem;
         public System.Windows.Forms.PictureBox pcbCarro;
         public System.Windows.Forms.Label label4;
-        public System.Windows.Forms.TextBox textBox1;
-        public System.Windows.Forms.TextBox textBox2;
+        public System.Windows.Forms.TextBox txtplaca;
+        public System.Windows.Forms.TextBox txtAno;
         public System.Windows.Forms.Label label7;
         public System.Windows.Forms.TextBox txtMarca;
-        public System.Windows.Forms.TextBox textBox4;
+        public System.Windows.Forms.TextBox txtNome;
         public System.Windows.Forms.Label label8;
         public System.Windows.Forms.Label label9;
         public System.Windows.Forms.Label label10;
-        public System.Windows.Forms.TextBox textBox5;
-        public System.Windows.Forms.TextBox textBox6;
+        public System.Windows.Forms.TextBox txtPreco;
+        public System.Windows.Forms.TextBox txtCor;
         public System.Windows.Forms.Label label11;
     }
 }

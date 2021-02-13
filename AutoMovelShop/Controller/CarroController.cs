@@ -10,7 +10,6 @@ namespace AutoMovelShop.Controller
 {
     public class CarroController : DataBase.DBcars
     {
-
         private DataBase.DBcars Contexto;
         public CarroController() => Contexto = new DataBase.DBcars();
 
@@ -51,6 +50,20 @@ namespace AutoMovelShop.Controller
 
             }).ToList();
             return List;
+        }
+
+      public  Carro BuscarDados(CarroView _view)
+        {
+            try
+            {
+                var carro = Contexto.Carros.AsNoTracking()
+                    .FirstOrDefault(x => x.CodCarro == _view.CodCarroView);
+                return carro;
+            }
+            catch (Exception msg)
+            {
+                throw new Exception("Ocorreu um erro ao Listar", msg);
+            }
         }
     }
 }

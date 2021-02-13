@@ -33,6 +33,7 @@ namespace AutoMovelShop.View.Consulta
             this.StripEdit = new System.Windows.Forms.MenuStrip();
             this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.alterarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.visualizarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.apagarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dwgCarro)).BeginInit();
             this.StripEdit.SuspendLayout();
@@ -56,6 +57,7 @@ namespace AutoMovelShop.View.Consulta
             this.StripEdit.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.sairToolStripMenuItem,
             this.alterarToolStripMenuItem,
+            this.visualizarToolStripMenuItem,
             this.apagarToolStripMenuItem});
             this.StripEdit.Location = new System.Drawing.Point(679, 0);
             this.StripEdit.Name = "StripEdit";
@@ -77,6 +79,13 @@ namespace AutoMovelShop.View.Consulta
             this.alterarToolStripMenuItem.Name = "alterarToolStripMenuItem";
             this.alterarToolStripMenuItem.Size = new System.Drawing.Size(117, 19);
             this.alterarToolStripMenuItem.Text = "Editar";
+            // 
+            // visualizarToolStripMenuItem
+            // 
+            this.visualizarToolStripMenuItem.Name = "visualizarToolStripMenuItem";
+            this.visualizarToolStripMenuItem.Size = new System.Drawing.Size(117, 19);
+            this.visualizarToolStripMenuItem.Text = "Visualizar";
+            this.visualizarToolStripMenuItem.Click += new System.EventHandler(this.visualizarToolStripMenuItem_Click);
             // 
             // apagarToolStripMenuItem
             // 
@@ -110,5 +119,6 @@ namespace AutoMovelShop.View.Consulta
         private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem alterarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem apagarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem visualizarToolStripMenuItem;
     }
 }

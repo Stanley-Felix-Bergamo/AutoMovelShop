@@ -29,10 +29,6 @@ namespace AutoMovelShop
             this.Close();
         }
 
-        
-
-
-
         public static void CarregaFormulario(Form frm, Panel pnl)
         {
             try
