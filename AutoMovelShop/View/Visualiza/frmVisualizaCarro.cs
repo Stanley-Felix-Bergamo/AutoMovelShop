@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -40,7 +41,10 @@ namespace AutoMovelShop.View.Visualiza
         public void frmVisualizaCarro_Shown(object sender, EventArgs e)
         {
             Carro = (new CarroController()).BuscarDados(_view);
-            //pcbCarro.Image = Carro.ImagemCarro;
+            
+           // pcbCarro.Image = Carro.ImagemCarro;
+
+            byteArrayToImage(Carro.ImagemCarro);
             txtMarca.Text = Carro.Modelo;
             txtAno.Text = Carro.Ano;
             txtCor.Text = Carro.Cor;
@@ -54,5 +58,16 @@ namespace AutoMovelShop.View.Visualiza
 
 
         }
+        public Image byteArrayToImage(byte[] byteArrayIn)
+        {
+            MemoryStream ms = new MemoryStream(byteArrayIn);
+            Image returnImage = Image.FromStream(ms);
+            pcbCarro.Image = returnImage;
+
+            return returnImage;
+        }
+
+
+
     }
 }
