@@ -32,7 +32,6 @@ namespace AutoMovelShop.View
 
         private void LimparTela()
         {
-            txtNome.Text = string.Empty;
             txtMarca.Text = string.Empty;
             txtPlaca.Text = string.Empty;
             txtpreco.Text = string.Empty;
@@ -64,11 +63,6 @@ namespace AutoMovelShop.View
                 return false;
             }
 
-            if (string.IsNullOrEmpty(txtNome.Text))
-            {
-                MessageBox.Show("Campo Cor Está Vazio", "Campo Obrigatorio", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return false;
-            }
 
             if (string.IsNullOrEmpty(txtColor.Text))
             {
@@ -94,7 +88,7 @@ namespace AutoMovelShop.View
         private void btnSalvar_Click(object sender, EventArgs e)
         {
 
-            x.Nome = txtNome.Text;
+           
             x.Modelo = txtMarca.Text;
             x.Placa = txtPlaca.Text;
             x.Preco = txtpreco.Text;

@@ -30,7 +30,6 @@ namespace AutoMovelShop.Controller
                 Cor = obj.Cor,
                 Ano = obj.Ano,
                 Modelo = obj.Modelo,
-                Nome = obj.Nome,
                 Placa = obj.Placa,
                 Preco = obj.Preco,
                 ImagemCarro=obj.ImagemCarro,

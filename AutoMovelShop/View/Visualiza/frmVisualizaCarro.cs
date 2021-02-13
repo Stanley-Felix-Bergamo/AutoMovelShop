@@ -43,7 +43,6 @@ namespace AutoMovelShop.View.Visualiza
             txtCor.Text = Carro.Cor;
             txtplaca.Text = Carro.Placa;
             txtPreco.Text = Carro.Preco;
-            txtNome.Text = Carro.Nome;
         }
         public Image CoverteImgagem(byte[] byteArrayIn)
         {

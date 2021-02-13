@@ -59,21 +59,17 @@ namespace AutoMovelShop.View.Consulta
             dwgCarro.Columns[nameof(CarroView.Modelo)].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
 
 
-            dwgCarro.Columns[nameof(CarroView.Nome)].DisplayIndex = 1;
-            dwgCarro.Columns[nameof(CarroView.Nome)].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-
-
-            dwgCarro.Columns[nameof(CarroView.Cor)].DisplayIndex = 2;
+            dwgCarro.Columns[nameof(CarroView.Cor)].DisplayIndex = 1;
             dwgCarro.Columns[nameof(CarroView.Cor)].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
 
-            dwgCarro.Columns[nameof(CarroView.Placa)].DisplayIndex = 3;
+            dwgCarro.Columns[nameof(CarroView.Placa)].DisplayIndex = 2;
             dwgCarro.Columns[nameof(CarroView.Placa)].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
 
-            dwgCarro.Columns[nameof(CarroView.Ano)].DisplayIndex = 4;
+            dwgCarro.Columns[nameof(CarroView.Ano)].DisplayIndex = 3;
             dwgCarro.Columns[nameof(CarroView.Ano)].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
 
 
-            dwgCarro.Columns[nameof(CarroView.Preco)].DisplayIndex = 5;
+            dwgCarro.Columns[nameof(CarroView.Preco)].DisplayIndex = 4;
             dwgCarro.Columns[nameof(CarroView.Preco)].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
 
         }

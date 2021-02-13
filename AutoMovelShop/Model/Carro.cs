@@ -16,14 +16,11 @@ namespace AutoMovelShop.Model
             this.Placa = carro.Placa;
             this.Preco = carro.Preco;
             this.Cor = carro.Cor;
-            this.Nome = carro.Nome;
             this.Ano = carro.Ano;
             this.ImagemCarro = carro.ImagemCarro;
         }
         [Key]
         public int CodCarro { get; set; }
-
-        public string Nome { get; set; }
         public string Modelo { get; set; }
         public string Placa { get; set; }
         public string Ano { get; set; }

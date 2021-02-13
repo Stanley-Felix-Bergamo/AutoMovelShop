@@ -38,9 +38,7 @@ namespace AutoMovelShop.View.Visualiza
             this.txtAno = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.txtMarca = new System.Windows.Forms.TextBox();
-            this.txtNome = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.txtPreco = new System.Windows.Forms.TextBox();
             this.txtCor = new System.Windows.Forms.TextBox();
@@ -85,7 +83,7 @@ namespace AutoMovelShop.View.Visualiza
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(239, 384);
+            this.label4.Location = new System.Drawing.Point(239, 349);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(34, 13);
             this.label4.TabIndex = 68;
@@ -93,14 +91,14 @@ namespace AutoMovelShop.View.Visualiza
             // 
             // txtplaca
             // 
-            this.txtplaca.Location = new System.Drawing.Point(296, 381);
+            this.txtplaca.Location = new System.Drawing.Point(296, 346);
             this.txtplaca.Name = "txtplaca";
             this.txtplaca.Size = new System.Drawing.Size(379, 20);
             this.txtplaca.TabIndex = 60;
             // 
             // txtAno
             // 
-            this.txtAno.Location = new System.Drawing.Point(296, 467);
+            this.txtAno.Location = new System.Drawing.Point(296, 432);
             this.txtAno.Name = "txtAno";
             this.txtAno.Size = new System.Drawing.Size(379, 20);
             this.txtAno.TabIndex = 63;
@@ -108,7 +106,7 @@ namespace AutoMovelShop.View.Visualiza
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(239, 474);
+            this.label7.Location = new System.Drawing.Point(239, 439);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(26, 13);
             this.label7.TabIndex = 67;
@@ -121,13 +119,6 @@ namespace AutoMovelShop.View.Visualiza
             this.txtMarca.Size = new System.Drawing.Size(379, 20);
             this.txtMarca.TabIndex = 57;
             // 
-            // txtNome
-            // 
-            this.txtNome.Location = new System.Drawing.Point(296, 340);
-            this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(379, 20);
-            this.txtNome.TabIndex = 58;
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -137,19 +128,10 @@ namespace AutoMovelShop.View.Visualiza
             this.label8.TabIndex = 59;
             this.label8.Text = "Marca";
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(239, 347);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(35, 13);
-            this.label9.TabIndex = 66;
-            this.label9.Text = "Nome";
-            // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(239, 429);
+            this.label10.Location = new System.Drawing.Point(239, 394);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(23, 13);
             this.label10.TabIndex = 61;
@@ -157,14 +139,14 @@ namespace AutoMovelShop.View.Visualiza
             // 
             // txtPreco
             // 
-            this.txtPreco.Location = new System.Drawing.Point(296, 513);
+            this.txtPreco.Location = new System.Drawing.Point(296, 478);
             this.txtPreco.Name = "txtPreco";
             this.txtPreco.Size = new System.Drawing.Size(379, 20);
             this.txtPreco.TabIndex = 64;
             // 
             // txtCor
             // 
-            this.txtCor.Location = new System.Drawing.Point(296, 422);
+            this.txtCor.Location = new System.Drawing.Point(296, 387);
             this.txtCor.Name = "txtCor";
             this.txtCor.Size = new System.Drawing.Size(379, 20);
             this.txtCor.TabIndex = 62;
@@ -172,7 +154,7 @@ namespace AutoMovelShop.View.Visualiza
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(239, 520);
+            this.label11.Location = new System.Drawing.Point(239, 485);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(35, 13);
             this.label11.TabIndex = 65;
@@ -190,9 +172,7 @@ namespace AutoMovelShop.View.Visualiza
             this.Controls.Add(this.txtAno);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtMarca);
-            this.Controls.Add(this.txtNome);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.label9);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.txtPreco);
             this.Controls.Add(this.txtCor);
@@ -220,9 +200,7 @@ namespace AutoMovelShop.View.Visualiza
         public System.Windows.Forms.TextBox txtAno;
         public System.Windows.Forms.Label label7;
         public System.Windows.Forms.TextBox txtMarca;
-        public System.Windows.Forms.TextBox txtNome;
         public System.Windows.Forms.Label label8;
-        public System.Windows.Forms.Label label9;
         public System.Windows.Forms.Label label10;
         public System.Windows.Forms.TextBox txtPreco;
         public System.Windows.Forms.TextBox txtCor;

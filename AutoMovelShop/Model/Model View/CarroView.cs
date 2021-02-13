@@ -18,7 +18,6 @@ namespace AutoMovelShop.Model.Model_View
         [Key]
         [Browsable(false)]
         public int CodCarroView { get; set; }
-        public string Nome { get; set; }
         public string Modelo { get; set; }
         public string Placa { get; set; }
         public string Cor { get; set; }
