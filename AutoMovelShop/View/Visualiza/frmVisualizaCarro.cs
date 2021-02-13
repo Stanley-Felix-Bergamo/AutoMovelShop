@@ -33,41 +33,24 @@ namespace AutoMovelShop.View.Visualiza
         {
             this.Close();
         }
-
-        private void pcbCarro_Click(object sender, EventArgs e)
-        {
-        }
-
         public void frmVisualizaCarro_Shown(object sender, EventArgs e)
         {
             Carro = (new CarroController()).BuscarDados(_view);
             
-           // pcbCarro.Image = Carro.ImagemCarro;
-
-            byteArrayToImage(Carro.ImagemCarro);
+            CoverteImgagem(Carro.ImagemCarro);
             txtMarca.Text = Carro.Modelo;
             txtAno.Text = Carro.Ano;
             txtCor.Text = Carro.Cor;
             txtplaca.Text = Carro.Placa;
             txtPreco.Text = Carro.Preco;
             txtNome.Text = Carro.Nome;
-
-
-
-
-
-
         }
-        public Image byteArrayToImage(byte[] byteArrayIn)
+        public Image CoverteImgagem(byte[] byteArrayIn)
         {
             MemoryStream ms = new MemoryStream(byteArrayIn);
             Image returnImage = Image.FromStream(ms);
             pcbCarro.Image = returnImage;
-
             return returnImage;
         }
-
-
-
     }
 }

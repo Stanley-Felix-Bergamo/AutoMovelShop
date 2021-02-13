@@ -15,7 +15,6 @@ namespace AutoMovelShop.Controller
 
         public void Salvar(Carro x)
         {
-
             Contexto.Carros.Add(x);
             Contexto.SaveChanges();
 

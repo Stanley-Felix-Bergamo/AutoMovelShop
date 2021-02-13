@@ -19,8 +19,7 @@ namespace AutoMovelShop.View.Consulta
         public frmConsultaCarro()
         {
             InitializeComponent();
-            
-
+          
         }
 
         private void sairToolStripMenuItem_Click(object sender, EventArgs e)
@@ -38,8 +37,6 @@ namespace AutoMovelShop.View.Consulta
             {
                 MessageBox.Show("Ops...", "Erro Ao Buscar", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
-
         }
 
         private void Buscar()
