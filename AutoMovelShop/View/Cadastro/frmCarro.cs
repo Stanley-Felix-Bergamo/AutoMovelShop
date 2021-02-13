@@ -87,15 +87,12 @@ namespace AutoMovelShop.View
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
-
-           
             x.Modelo = txtMarca.Text;
             x.Placa = txtPlaca.Text;
             x.Preco = txtpreco.Text;
             x.Ano = txtAno.Text;
             x.Cor = txtColor.Text;
             x.ImagemCarro = imagemBytes;
-
 
             if (!ValidaCao())
                 return;
@@ -120,19 +117,12 @@ namespace AutoMovelShop.View
             {
                 Endereco = dialog.FileName.ToString();
                 ptbImagemAdicionada.ImageLocation = Endereco;
-
-
-
-
-
                
                 string caminhoCompletoImagem = Endereco;
                 FileStream fs = new FileStream(caminhoCompletoImagem, FileMode.Open, FileAccess.Read);
                 BinaryReader br = new BinaryReader(fs);
 
                 imagemBytes = br.ReadBytes(1200000);
-               // x.ImagemCarro = imagemBytes;
-               
 
             }
         }

@@ -28,11 +28,6 @@ namespace AutoMovelShop.View.Visualiza
         {
             InitializeComponent();
         }
-
-        private void sairToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
         public void frmVisualizaCarro_Shown(object sender, EventArgs e)
         {
             Carro = (new CarroController()).BuscarDados(_view);
@@ -50,6 +45,11 @@ namespace AutoMovelShop.View.Visualiza
             Image returnImage = Image.FromStream(ms);
             pcbCarro.Image = returnImage;
             return returnImage;
+        }
+
+        private void btnVoltar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

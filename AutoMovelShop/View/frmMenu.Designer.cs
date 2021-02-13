@@ -29,6 +29,7 @@ namespace AutoMovelShop
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMenu));
             this.StripMenu = new System.Windows.Forms.MenuStrip();
             this.cadastrarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.carroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -80,7 +81,7 @@ namespace AutoMovelShop
             // carroToolStripMenuItem2
             // 
             this.carroToolStripMenuItem2.Name = "carroToolStripMenuItem2";
-            this.carroToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.carroToolStripMenuItem2.Size = new System.Drawing.Size(160, 22);
             this.carroToolStripMenuItem2.Text = "Tabela de Carros";
             this.carroToolStripMenuItem2.Click += new System.EventHandler(this.carroToolStripMenuItem2_Click);
             // 
@@ -109,6 +110,7 @@ namespace AutoMovelShop
             this.Controls.Add(this.pnlPrincipal);
             this.Controls.Add(this.StripMenu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.StripMenu;
             this.Name = "frmMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
